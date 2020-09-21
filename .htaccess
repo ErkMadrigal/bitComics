@@ -13,4 +13,4 @@ DirectoryIndex index.php
 
 
 # evitar que se muestren ciertos tipos de archivo
-IndexIgnore *.css *.map *.js *.png *.jpg *.wmv *.mp4 *.avi *.etc
+IndexIgnore *.sql *.css *.map *.js *.png *.jpg *.wmv *.mp4 *.avi *.etc

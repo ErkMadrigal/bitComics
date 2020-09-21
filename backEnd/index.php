@@ -122,7 +122,7 @@
         break;
         
         default:
-            $respuesta = "hola mundo";            
+            header('Location: ../index.php');         
         break;
     }
    
