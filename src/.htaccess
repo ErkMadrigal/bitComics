@@ -1,0 +1,26 @@
+# nos dice si un directorio es un enlace simbólico, que lo siga.
+Options +FollowSymLinks
+
+#  le decimos a Apache que queremos sobre escribir las URLs para crear URLs amigables.
+RewriteEngine on
+
+
+#configuración para redirección con url amigables
+
+Options All -Indexes
+
+DirectoryIndex index.php
+
+RewriteRule ^login$ index.php
+RewriteRule ^login$ index.php?dir=login
+RewriteRule ^comics$ index.php?dir=comics
+RewriteRule ^home$ index.php?dir=home
+RewriteRule ^update$ index.php?dir=update
+RewriteRule ^comic-(.*)$ index.php?dir=comic&Idcomic=$1
+
+ErrorDocument 404 /404.html
+
+
+
+# evitar que se muestren ciertos tipos de archivo
+IndexIgnore *.css *.map *.js *.png *.jpg *.wmv *.mp4 *.avi *.etc
