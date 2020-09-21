@@ -13,6 +13,8 @@
 
 ## datos del usuarios super administrador 
 
+
+* [sucursal] BitComics Metepec
 * [correo] admin@bit.com
 * [telefono] 7220001112
 * [NomUsuario] admin000
